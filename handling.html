@@ -176,25 +176,16 @@
                                     </div>
                                     <input type="number" oninput="applyValueChange(this)" name="fInitialDragCoeff"
                                         class="form-control text-center my-2" step="0.05" id="fInitialDragCoeffInput">
-                                    <p>The vehicle's body air resistance.
-                                    </p>
+                                    <p>A resistência do ar da carroceria do veículo.</p>
                                     <p>
-                                        Higher resistance means an eariler perceived loss of
-                                        power at higher speed, resulting in a lower top speed, as the engine cannot
-                                        overpower this force. Lower air resistance allows the vehicle to travel faster
-                                        on the same power.
+                                        Uma resistência maior significa uma perda de potência percebida mais cedo em altas velocidades, resultando em uma velocidade máxima mais baixa, já que o motor não consegue superar essa força. Uma resistência do ar menor permite que o veículo alcance velocidades maiores com a mesma potência.
                                     </p>
 
-                                    <p>Working as a multiplier, this value defines how much will air drag scale with
-                                        speed. The higher the multiplier, the more powerful air resistance will be at
-                                        high speeds.</p>
+                                    <p>Funcionando como um multiplicador, esse valor define o quanto o arrasto do ar aumentará com a velocidade. Quanto maior o multiplicador, mais forte será a resistência do ar em altas velocidades.</p>
                                     <div class="pl-5 font-italic">
-                                        <li>The tug of war between Torque and Drag is not very strong. Your vehicle can
-                                            easily go over this speed on downhill or under performance upgrades, though
-                                            not very far.</li>
-                                        <li>Drag works against Torque. Both are measured in G-Forces, the speed at which
-                                            they even out is the vehicle's top speed.</li>
-                                        <li>Unlike Downforce, drag is omnidirectional.</li>
+                                        <li>A disputa entre Torque e Arrasto não é muito intensa. Seu veículo pode ultrapassar essa velocidade em descidas ou com upgrades de performance, mas não muito.</li>
+                                        <li>O arrasto atua contra o torque. Ambos são medidos em Forças-G, e a velocidade em que se igualam é a velocidade máxima do veículo.</li>
+                                        <li>Diferente do Downforce, o arrasto é omnidirecional.</li>
                                     </div>
                                 </div>
                             </div>
@@ -208,14 +199,13 @@
                 <div class="row pb-4 px-3">
                     <div class="border mt-3">
                         <h3 class="text-center py-1">Chassis</h3>
-                        <p class="px-5 text-center">This set of values represent the vehicle body itself, and will play
-                            a big role on how the vehicle behaves overall.</p>
+                        <p class="px-5 text-center">Esse conjunto de valores representa a carroceria do veículo em si, e terá um grande papel no comportamento geral do veículo.</p>
                         <hr>
 
                         <div class="row px-3">
                             <div class="col-md-4">
                                 <div class="bg-light border border-rounded p-4">
-                                    <h3 class="text-center">Mass </h3>
+                                    <h3 class="text-center">Massa </h3>
                                     <p class="text-muted text-center">fMass</p>
                                     <div class="d-flex align-content-center">
                                         <span>0</span>
@@ -228,23 +218,18 @@
                                         <div class="text-center" style="min-height:50px">
                                             <input type="number" oninput="applyValueChange(this)" name="fMass"
                                                 id="fMassInput" class="form-control text-center my-2">
-                                            <small class="d-none">Your car will weight <span
+                                            <small class="d-none">Seu carro pesará <span
                                                     class="text-danger">1000</span>kg.</small>
                                         </div>
                                     </div>
-                                    <p>Measured in Kg, mass is only responsible for the interaction between entities.
-                                        Let's
-                                        say its the vehicle's pushing force. </p>
-                                    <p>Mass is not at all related to physical
-                                        agility and does not affect the car's physics at all. Only affects how well the
-                                        car fares when colliding
-                                        with other entities. Vehicles, Lamp posts, rocks, etc.</p>
+                                    <p>Medida em Kg, a massa é responsável apenas pela interação entre entidades. Digamos que é a força de empurrão do veículo. </p>
+                                    <p>A massa não está relacionada com agilidade física e não afeta a física do carro em si. Apenas influencia o quão bem o carro se sai em colisões com outras entidades, como veículos, postes de luz, pedras, etc.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-light border border-rounded p-4">
 
-                                    <h3 class="text-center">Center of Mass</h3>
+                                    <h3 class="text-center">Centro de Massa</h3>
                                     <p class="text-muted text-center">vecCentreOfMassOffset</p>
 
                                     <div class="d-flex align-content-center">
@@ -258,12 +243,12 @@
                                     <input type="number" oninput="applyValueChange(this)" name="vecCentreOfMassOffset"
                                         class="form-control text-center my-2" step="0.001"
                                         id="d_vecCentreOfMassOffsetInput" disabled>
-                                    <p>This editor is not able to edit the Center Of Mass offsets yet.</p>
+                                    <p>Este editor ainda não é capaz de editar os deslocamentos do Centro de Massa.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-light border border-rounded p-4">
-                                    <h3 class="text-center">Rotational Inertia</h3>
+                                    <h3 class="text-center">Inércia Rotacional</h3>
                                     <p class="text-muted text-center">vecInertiaMultiplier</p>
 
                                     <div class="d-flex align-content-center">
@@ -277,7 +262,7 @@
                                     <input type="number" oninput="applyValueChange(this)" name="vecInertiaMultiplier"
                                         class="form-control text-center my-2" step="0.001"
                                         id="d_vecInertiaMultiplierInput" disabled>
-                                    <p>This editor is not able to edit the Rotational Inertia offsets yet.</p>
+                                    <p>Este editor ainda não é capaz de editar os deslocamentos da Inércia Rotacional.</p>
                                 </div>
                             </div>
                         </div>
