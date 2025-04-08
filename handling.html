@@ -362,15 +362,14 @@
             </div>
             <div class="pb-5 tab-pane fade" id="transmission" role="tabpanel" aria-labelledby="transmission-tab">
                 <div class="border mt-3">
-                    <h3 class="text-center py-1">Transmission</h3>
-                    <p class="px-5 text-center">Together with the Engine, the transmission settings define the power
-                        output of your vehicle.</p>
+                    <h3 class="text-center py-1">Transmissão</h3>
+                    <p class="px-5 text-center">Junto com o motor, as configurações da transmissão definem a entrega de potência do seu veículo.</p>
                     <hr>
                     <div class="row pb-4 px-3">
                         <div class="col-md-4">
                             <div class="bg-light border border-rounded p-4">
 
-                                <h3 class="text-center">Nº of Gears</h3>
+                                <h3 class="text-center">Nº de Marchas</h3>
                                 <p class="text-muted text-center">nInitialDriveGears</p>
                                 <div class="d-flex align-content-center">
                                     <span>0</span>
@@ -382,19 +381,18 @@
                                 <input class="form-control text-center my-2" type="number" value="6" step="1"
                                     oninput="applyValueChange(this) " id="nInitialDriveGearsInput"
                                     name="nInitialDriveGears">
-                                <p>Number of gears at stock.</p>
+                                <p>Número de marchas no padrão de fábrica.</p>
                                 <hr>
-                                <p>As gears modulate the <i>fInitialDriveForce</i> up until
-                                    <i>fInitialDriveMaxFlatVel</i>, keepin a reasonably number of gears for your top
-                                    speed is reccomended.
+                                <p>Como as marchas modulam o <i>fInitialDriveForce</i> até alcançar
+                                    <i>fInitialDriveMaxFlatVel</i>, é recomendado manter um número razoável de marchas para sua velocidade máxima.
                                 </p>
 
-                                <p>Remember Transmission upgrades add one gear total.</p>
+                                <p>Lembre-se: atualizações da transmissão adicionam uma marcha extra.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light border border-rounded p-4">
-                                <h3 class="text-center">Shift times</h3>
+                                <h3 class="text-center">Tempo de Troca</h3>
                                 <p class="text-muted text-center">fClutchChangeRateScaleUpShift</p>
                                 <div class="d-flex align-content-center">
                                     <span>0</span>
@@ -406,8 +404,8 @@
                                 <input class="form-control text-center my-2" type="number"
                                     oninput="applyValueChange(this)" step="0.05" id="fClutchChangeRateScaleUpShiftInput"
                                     name="fClutchChangeRateScaleUpShift">
-                                <p class=" mx-auto text-center">The vehicle will take <span class="text-danger"
-                                        id="fClutchChangeRateScaleUpShiftExpl"></span>s to shift from gear to gear.</p>
+                                <p class=" mx-auto text-center">O veículo levará <span class="text-danger"
+                                        id="fClutchChangeRateScaleUpShiftExpl"></span>s para trocar de marcha.</p>
                                 <hr>
                                 <p></p>
                                 <p class="text-muted text-center">fClutchChangeRateScaleDownShift</p>
@@ -426,7 +424,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light border border-rounded p-4">
-                                <h3 class="text-center">Power Bias</h3>
+                                <h3 class="text-center">Distribuição de Potência</h3>
                                 <p class="text-muted text-center">fDriveBiasFront</p>
 
                                 <div class="d-flex align-content-center">
@@ -438,9 +436,8 @@
                                 </div>
                                 <input class="form-control text-center my-2" step="0.01" type="number"
                                     oninput="applyValueChange(this)" id="fDriveBiasFrontInput" name="fDriveBiasFront">
-                                <p>Defines how the power from <i>fInitialDriveForce</i> is distributed between the
-                                    axles.</p>
-                                <p>0.0 implies a fully RWD setup, with will only deliver power to the rear wheels.</p>
+                                <p>Define como a potência do <i>fInitialDriveForce</i> será distribuída entre os eixos.</p>
+                                <p>0.0 indica um setup totalmente traseiro (RWD), onde somente as rodas traseiras recebem tração</p>
 
 
                             </div>
